@@ -1,0 +1,7 @@
+export { Header } from "./Header"
+export { Footer } from "./Footer"
+export { Card } from "./Card"
+export { OtherServiceCard } from "./OtherServiceCard"
+export { CustomerReviewCard } from "./CustomerReviewCard"
+export { FaqCard } from "./FaqCard"
+export { BookingForm } from "./BookingForm"
