@@ -17,8 +17,9 @@ export function Header() {
   return (
     <header className=''>
 
-        <div className='fixed bottom-5 left-5 z-10'>
-            <a href='https://wa.me/917509697569' target='_blank' rel="noreferrer" >    <FaSquareWhatsapp className='font-bold text-4xl hover:text-5xl  text-green-800' /> </a>
+        {/* whatsapp linked to web */}
+        <div className='fixed bottom-5 md:bottom-12 right-5 md:right-12 z-10'>
+            <a href='https://wa.me/917509697569' target='_blank' rel="noreferrer" >    <FaSquareWhatsapp className='font-bold text-5xl hover:text-5xl  text-green-700 bg-white rounded-md' /> </a>
         </div>
 
 

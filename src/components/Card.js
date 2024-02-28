@@ -4,9 +4,9 @@ import ACImage from "../images/hero/washing-machine.jpg"
 export  function Card() {
   return (
     
-        <div className="my-10 max-w-xs rounded-xl bg-pink-100 border border-black text-pink-800 text-start ">
+        <div className="my-10 max-w-xs rounded-xl bg-pink-100 border shadow-md text-pink-800 text-start  ">
             <div className=''>
-                <img src = {ACImage} alt = "service " className='h-32 w-full' />
+                <img src = {ACImage} alt = "service " className='h-40 w-full' />
             </div>
   <p className="mb-2 text-xl font-medium px-2">AC Repairing</p>
   {/* <p className="mb-6 px-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit earum vitae tempore.</p> */}
@@ -38,7 +38,7 @@ export  function Card() {
   </div>
 
   <div className='flex justify-between items-center px-2 py-2'>
-    <p className='font-semibold text-lg'> ₹ 499 /- </p>
+    <p className='font-semibold text-sm'> Starts From ₹ 499 /- </p>
     <button className=" text-sm bg-green-600 hover:bg-green-800  py-1 px-3 rounded-md text-white">Book Now</button>
   </div>
  

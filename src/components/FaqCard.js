@@ -43,7 +43,7 @@ export  function FaqCard ({item}) {
    
 
        {/* answer */}
-      <div className='bg-slate-100 text-start py-2 px-5'>
+      <div className=' text-start py-2 px-5'>
         {
           isVisible && (
             <p> {item.answer} </p>

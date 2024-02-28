@@ -29,7 +29,7 @@ function Faq() {
     <h2 className='text-zinc-800 font-extrabold text-3xl '> Frequently asked questions </h2>
     <p className='text-md py-2'> Ask any questions about our services </p>
     
-    <div className='w-8/12 flex flex-col  gap-2 mx-auto my-4'>
+    <div className='w-10/12 md:w-8/12 flex flex-col  gap-2 mx-auto my-4'>
 
       {
         faqList.map((item) => {
