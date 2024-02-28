@@ -46,16 +46,16 @@ function Hero() {
   return (
     <div className="">
       <Slider {...settings}>
-        <div className="bg-green-600 h-40 md:h-[480px] w-full relative">
+        <div className="h-40 md:h-[480px] w-full relative">
           <img src = {HomeAppliance} alt = "Air Conditioner One" className="h-full w-full object-fit" />
          
         </div>
 
-        <div className="bg-orange-600 h-40 md:h-[480px] w-full">
+        <div className=" h-40 md:h-[480px] w-full">
         <img src = {Freeze} alt = "Air Conditioner One" className="h-full w-full object-fit" />
         </div>
 
-        <div className="bg-blue-600 h-40 md:h-[480px] w-full">
+        <div className=" h-40 md:h-[480px] w-full">
         <img src = {WashingMachine} alt = "Air Conditioner One" className="h-full w-full object-fit" />
         </div>
       </Slider>

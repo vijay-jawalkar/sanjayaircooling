@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+
+import { Link } from "react-router-dom"
 import Logo from "../images/skLogo.png"
 import { IoIosCall } from "react-icons/io";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -6,36 +8,43 @@ import { FaSquareWhatsapp } from "react-icons/fa6";
 
 
 
+
 export function Header() {
     const [isVisible, setIsVisible] = useState(false)
+   
+   
 
   return (
-    <header>
+    <header className=''>
 
-        <div className='fixed bottom-5 left-5 z-50'>
+        <div className='fixed bottom-5 left-5 z-10'>
             <a href='https://wa.me/917509697569' target='_blank' rel="noreferrer" >    <FaSquareWhatsapp className='font-bold text-4xl hover:text-5xl  text-green-800' /> </a>
         </div>
 
-        {/* service book now */}
-        <section className='bg-orange-600 flex justify-start lg:justify-center items-center py-3 text-zinc-100 gap-3 border border-t-0 border-x-0 border-b-2 border-b-white'> 
-            <p className='text-sm lg:text-lg font-semibold animate-bounce animate-infinite px-2'> Call us now </p>
-            <a href="tel:+917509697569" target='_blank' rel="noreferrer"  className='bg-green-800 rounded-2xl py-1 px-3 md:px-5 font-semibold flex items-center gap-2'>
-            <IoIosCall className='font-bold text-lg' />
-                <span className='text-sm md:text-base'> 7509697569 </span>
-            </a>
 
-            <div className='text-sm lg:text-medium absolute right-6 flex flex-col lg:flex-row gap-1 lg:gap-2'>
-            <p className='cursor-pointer hover:underline underline-offset-4'>LogIn</p>
-            <p className='cursor-pointer hover:underline underline-offset-4'>Register</p>
-            </div>
-          
-        </section>
+
+          {/* service book now */}
+   <section className=' bg-orange-600 flex justify-start lg:justify-center items-center py-3 text-zinc-100 gap-3 border border-t-0 border-x-0 border-b-2 border-b-white'> 
+   <p className='text-sm lg:text-lg font-semibold animate-bounce animate-infinite px-2'> Call us now </p>
+   <a href="tel:+917509697569" target='_blank' rel="noreferrer"  className='bg-green-800 rounded-2xl py-1 px-3 md:px-5 font-semibold flex items-center gap-2'>
+   <IoIosCall className='font-bold text-lg' />
+       <span className='text-sm md:text-base'> 7509697569 </span>
+   </a>
+
+   <div className='text-sm lg:text-medium absolute right-6 flex flex-col lg:flex-row gap-1 lg:gap-2'>
+   <p className='cursor-pointer hover:underline underline-offset-4'>LogIn</p>
+   <p className='cursor-pointer hover:underline underline-offset-4'>Register</p>
+   </div>
+ 
+</section>
+       
+     
 
 
 
 
        {/* navigation bar */}
-        <section className='flex justify-between items-center  px-6 bg-gray-900 text-zinc-100 '>
+        <section className= "flex justify-between items-center  px-6 bg-gray-900 text-zinc-100">
 
     {/* logo */}
     <div className='h-20 w-20 rounded-full'>
@@ -45,12 +54,12 @@ export function Header() {
 
     {/* navigation items for large devices */}
     <nav className='hidden lg:flex justify-center items-center gap-4 '>
-    <p className='cursor-pointer hover:underline underline-offset-4 hover:text-zinc-200'> HOME </p>
+    <Link to = "/" className='cursor-pointer hover:underline underline-offset-4 hover:text-zinc-200'> HOME </Link>
     <p className='cursor-pointer hover:underline underline-offset-4 hover:text-zinc-200'> AC SERVICES </p>
     {/* <p className='cursor-pointer hover:underline underline-offset-4 hover:text-zinc-200'> ELECTRICITY SERVICES </p> */}
     <p className='cursor-pointer hover:underline underline-offset-4 hover:text-zinc-200'> OTHER SERVICES </p>
     <p className='cursor-pointer hover:underline underline-offset-4 hover:text-zinc-200'> BLOG </p>
-    <p className='cursor-pointer hover:underline underline-offset-4 hover:text-zinc-200'> CONTACT US </p>
+    <Link to="/contact" className='cursor-pointer hover:underline underline-offset-4 hover:text-zinc-200'> CONTACT US </Link>
     </nav>
 
    <button 

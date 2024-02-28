@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import ElectricImage from "../images/hero/electricity.jpg"
+// import ElectricImage from "../images/hero/electricity.jpg"
 import { BookingForm } from './BookingForm'
 
 export  function OtherServiceCard({item}) {
@@ -7,9 +7,9 @@ export  function OtherServiceCard({item}) {
 
   return (
     <>
-     <div className="my-10 max-w-xs rounded-xl bg-pink-100 border border-black text-pink-800 text-start ">
+     <div className="my-10 max-w-xs rounded-xl bg-pink-100 border shadow-md text-pink-800 text-start ">
     <div className=''>
-        <img src = {ElectricImage} alt = "services" className='h-48 w-full' />
+        <img src = {item.img} alt = "services" className='h-40 w-full' />
     </div>
 <p className="mb-2 text-xl font-medium px-2">{item.name}</p>
 {/* <p className="mb-6 px-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit earum vitae tempore.</p> */}
@@ -34,7 +34,7 @@ export  function OtherServiceCard({item}) {
 </div> 
 
 <div className='flex justify-between items-center px-2 py-2'>
-<button className=' text-sm py-1 px-3 bg-blue-800 text-white rounded-md'> Explore Now </button>
+<button className=' text-sm py-1 px-3 bg-blue-800 hover:bg-blue-900 text-white rounded-md'> Explore Now </button>
 <button 
 onClick={() => setShowForm(!showForm)}
 className=" text-sm bg-green-600 hover:bg-green-800  py-1 px-3 rounded-md text-white">Book Now</button>
@@ -44,7 +44,7 @@ className=" text-sm bg-green-600 hover:bg-green-800  py-1 px-3 rounded-md text-w
 {
   showForm && (
 <div className=" fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-25 flex justify-center items-center z-50">
-<BookingForm setShowForm = {setShowForm} />
+<BookingForm setShowForm = {setShowForm} cancelShow = {true} />
 </div>
   )
 }

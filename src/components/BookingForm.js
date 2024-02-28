@@ -1,17 +1,22 @@
 import React from 'react'
 import { MdCancel } from "react-icons/md";
 
-export function BookingForm({setShowForm}) {
+export function BookingForm({setShowForm, cancelShow}) {
 
   return (
    <div className='border rounded-md my-7 w-11/12  md:w-1/3  mx-auto overflow-hidden shadow-lg relative  '>
 
 {/* cancel icon */}
-    <div 
+{
+  cancelShow && (
+<div 
     onClick={() => setShowForm(false)}
     className='absolute top-4 right-2 text-2xl font-bold text-zinc-50 cursor-pointer'>
       <MdCancel/>
     </div>
+  )
+}
+    
 
     <h3 className='py-3 px-1 text-xl font-extrabold bg-red-700 text-white '> Service Booking Form </h3>
     <form className='flex flex-col p-4 bg-white'>

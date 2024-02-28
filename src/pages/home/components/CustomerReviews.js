@@ -68,7 +68,7 @@ function SampleNextArrow(props) {
     <div className='my-12'>
 
    <h2 className='text-zinc-800 font-extrabold text-3xl'> Customer Reviews</h2>
-   <p className='text-md py-2'> Discover what our customers have to say about their experience!</p>
+   <p className='text-md py-2 px-2'> Discover what our customers have to say about their experience!</p>
 
         <div className='mx-auto w-9/12 md:w-8/12  my-6'>
         <Slider {...settings}>

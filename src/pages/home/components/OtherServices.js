@@ -1,6 +1,8 @@
 import React from 'react'
 import { OtherServiceCard } from '../../../components'
-
+import ElectricianImg from "../../../images/hero/Electrician-1.jpg"
+import WashingMachineImg from "../../../images/hero/washing-machine.jpg"
+import RefregeratorImg from "../../../images/hero/Refregerator.jpg"
 
 function OtherServices() {
 
@@ -9,6 +11,7 @@ function OtherServices() {
         {
             id: 1,
             name: "Electric Appliance Repair",
+            img: ElectricianImg,
             description: [
                 "Our technicians can fix many types of electric appliances.",
                 "We offer quick appointments that work with your schedule.",
@@ -18,6 +21,7 @@ function OtherServices() {
         {
             id: 2,
             name: "Washing Machine Repair",
+            img: WashingMachineImg,
             description: [
                 "Skilled in repairing all washing machine brands and models.",
                 "We offer quick and flexible scheduling to suit your needs.",
@@ -27,6 +31,7 @@ function OtherServices() {
         {
             id: 3,
             name: "Refrigerator Repair",
+            img: RefregeratorImg,
             description: [
                 "Expert repairs for all refrigerator brands and models.",
                 "Flexible scheduling options tailored to your convenience.",
@@ -39,7 +44,7 @@ function OtherServices() {
 
     <div className='my-2 '>
     <h2 className='text-zinc-800 font-extrabold text-3xl '> Our Other Services </h2>
-    <p className='text-md py-2'> Discover our AC services below: installation, maintenance, repair, and consultation. Each card offers unique details for your needs. </p>
+    <p className='text-md py-2 px-2'> Explore our diverse service offerings: electrical appliance repair, refrigerator services, and washing machine repair, each uniquely tailored to your needs. </p>
     </div>
 
    {/* AC services list */}

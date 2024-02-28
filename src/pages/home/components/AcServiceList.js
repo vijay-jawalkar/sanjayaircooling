@@ -7,7 +7,7 @@ function AcServiceList() {
 
       <div className='my-2 '>
       <h2 className='text-zinc-800 font-extrabold text-3xl '> Our AC Services </h2>
-      <p className='text-md py-2'> Discover our AC services below: installation, maintenance, repair, and consultation. Each card offers unique details for your needs. </p>
+      <p className='text-md py-2 px-2'> Discover our AC services below: installation, maintenance, repair, and consultation. Each card offers unique details for your needs. </p>
       </div>
 
      {/* AC services list */}
