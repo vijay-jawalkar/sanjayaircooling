@@ -73,12 +73,12 @@ export function Header() {
     {
         isVisible && (
             <nav className="w-[60vw] h-screen bg-gray-900 flex flex-col justify-start  md:hidden gap-6 items-center text-zinc-100 absolute right-0 top-0 z-10 pt-14 rounded-tl-lg rounded-bl-lg duration-500">
-            <p className='cursor-pointer hover:underline underline-offset-4'> HOME </p>
+            <Link to ="/"    onClick={() => setIsVisible(false)}  className='cursor-pointer hover:underline underline-offset-4'> HOME </Link>
             <p className='cursor-pointer hover:underline underline-offset-4'> AC SERVICES </p>
             {/* <p className='cursor-pointer hover:underline underline-offset-4'> ELECTRICITY SERVICES </p> */}
             <p className='cursor-pointer hover:underline underline-offset-4'> OTHER SERVICES </p>
             <p className='cursor-pointer hover:underline underline-offset-4'> BLOG </p>
-            <p className='cursor-pointer hover:underline underline-offset-4'> CONTACT US </p>
+            <Link to = "/contact"    onClick={() => setIsVisible(false)} className='cursor-pointer hover:underline underline-offset-4'> CONTACT US </Link>
 
             <div 
             onClick={() => setIsVisible(false)}
